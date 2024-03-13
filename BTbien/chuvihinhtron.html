@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuvi</title>
+</head>
+<body>
+    nhap ban kinh <input id="bk" type="text">
+    <button onclick="dosomething()">nhap</button>
+    <p id="area"></p>
+</body>
+</html>
+<script>
+  function dosomething()
+  {
+      let bk=+document.getElementById('bk').value;
+      let pi=Math.PI;
+      let area=bk*2*pi;
+      document.getElementById('area').innerHTML='chu vi = '+area;
+  }
+</script>

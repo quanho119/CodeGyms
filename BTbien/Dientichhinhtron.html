@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dientich</title>
+</head>
+<body>
+    nhap ban kinh <input id="bk" type="text">
+    <button onclick="dosomething()">nhap</button>
+    <p id="area"></p>
+</body>
+</html>
+<script>
+    function dosomething()
+    {
+        let bk=+document.getElementById('bk').value;
+        let pi=Math.PI;
+        let area=bk*bk*pi;
+        document.getElementById('area').innerHTML='dien tich = '+area;
+    }
+</script>
