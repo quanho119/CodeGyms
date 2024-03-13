@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien</title>
+</head>
+<body>
+    <label for="amount">Amount</label>
+    <input type="text" id="amount" name="amount">
+    <label for="fc">From Currency</label>
+    <select name="fc" id="fc">
+        <option value="1">VND</option>
+        <option value="2">USD</option>
+    </select>
+    <label for="tc">To Currency</label>
+    <select name="tc" id="tc">
+        <option value="1">VND</option>
+        <option value="2">USD</option>
+    </select>
+    <button onclick="tinh()">convert</button>
+    <p id="result"></p>
+</body>
+</html>
+<script src="chuyendoi.js"></script>
