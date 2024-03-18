@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tien dien</title>
+    <style>
+        table, th, td
+        {
+            width: 200px;
+            height: 10px;
+            border: 10px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="old">Nhập chỉ số cũ</label>
+        <input id="old" type="number">kWh
+        <br>
+        <label for="new">Nhập chỉ số mới</label>
+        <input id="new" type="number">kWh
+        <br>
+        <button onclick="Tinh()">Tính</button>
+        <!--<h2 id="mon"></h2>-->
+        <table>
+            <tr>
+                <td>Bậc 1</td>
+                <td>1.678 đồng</td>
+                <td id="bac1"></td>
+            </tr>
+            <tr>
+                <td>Bậc 2</td>
+                <td>1.734 đồng</td>
+                <td id="bac2"></td>
+            </tr>
+            <tr>
+                <td>Bậc 3</td>
+                <td>2.014 đồng</td>
+                <td id="bac3"></td>
+            </tr>
+            <tr>
+                <td>Bậc 4</td>
+                <td>2.536 đồng</td>
+                <td id="bac4"></td>
+            </tr>
+            <tr>
+                <td>Bậc 5</td>
+                <td>2.834 đồng</td>
+                <td id="bac5"></td>
+            </tr>
+            <tr>
+                <td>Bậc 6</td>
+                <td>2.927 đồng</td>
+                <td id="bac6"></td>
+            </tr>
+        </table>
+        <p id="sum"></p>
+    </div>
+</body>
+</html>
+<script src="elec.js"></script>

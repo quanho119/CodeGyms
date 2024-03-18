@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tien nuoc</title>
+    <style>
+        table, th, td
+        {
+            width: 200px;
+            height: 10px;
+            border: 10px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="old">Nhập chỉ số cũ</label>
+    <input id="old" type="number">m3
+    <br>
+    <label for="new">Nhập chỉ số mới</label>
+    <input id="new" type="number">m3
+    <br>
+    <button onclick="Tinh()">Tính</button>
+    <!--<h2 id="mon"></h2>-->
+    <table>
+        <tr>
+            <td>Mức 1</td>
+            <td>5.973 đồng</td>
+            <td id="muc1"></td>
+        </tr>
+        <tr>
+            <td>Mức 2</td>
+            <td>7.052 đồng</td>
+            <td id="muc2"></td>
+        </tr>
+        <tr>
+            <td>Mức 3</td>
+            <td>8.669 đồng</td>
+            <td id="muc3"></td>
+        </tr>
+        <tr>
+            <td>Mức 4</td>
+            <td>15.929 đồng</td>
+            <td id="muc4"></td>
+        </tr>
+    </table>
+    <p id="sum"></p>
+</div>
+</body>
+</html>
+<script src="wat.js"></script>
