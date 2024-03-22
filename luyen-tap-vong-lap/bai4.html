@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let s1=1,s2=1,ans;
+    for(let i=3;i<=20;i++)
+    {
+        ans=s1+s2;
+        s2=s1;
+        s1=ans;
+        if(ans%5==0)
+        {
+            document.write(ans);
+            break;
+        }
+    }
+</script>

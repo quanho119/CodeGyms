@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let s1=1,s2=1,ans,sum=s1+s2;
+    for(let i=3;i<=20;i++)
+    {
+        ans=s1+s2;
+        s2=s1;
+        s1=ans;
+        sum+=ans;
+    }
+    document.write(sum);
+</script>
