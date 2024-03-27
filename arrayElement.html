@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mang</title>
+    <style>
+        body {padding-top:20px}
+    </style>
+</head>
+<body>
+    <label for="value">Enter here</label>
+    <br>
+    <input id="value" type="text">
+    <br>
+    <button onclick="addmore()">Add</button>
+    <button onclick="disnow()">Display</button>
+    <br>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+    let x=0;
+    let a=[];
+    function addmore()
+    {
+        a[x]=document.getElementById("value").value;
+        alert("Element: " + a[x] + " Added at index " + x);
+        x++;
+        document.getElementById("value").value="";
+    }
+    function disnow()
+    {
+        let e="<hr>"
+        for(let i=0;i<x;i++)
+            e+="Element "+i+" = "+a[i]+"<br>";
+        document.getElementById('result').innerHTML=e;
+    }
+</script>
